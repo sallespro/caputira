@@ -1,23 +1,24 @@
-# papuf
+# Caputira
 
-Papuf é um template para web sites baseado em GatsbyJS e Tailwind CSS
+Caputira é um web site criado para publicar o material audiovisual produzido durate o evento a todos os pilotos e participantes.
+
 ## source code
 
-[source code](https://github.com/sallespro/papuf)
+[source code](https://github.com/sallespro/caputira)
 
 ## github.io hosted
 
-The [github.io](https://sallespro.github.io/papuf/) site
+The [github.io](https://sallespro.github.io/caputira/) site
 
 ## Development Sandbox
 
 ### The CodeSandbox
 
-[CodeSandbox](https://codesandbox.io/s/cool-murdock-riwjb)
+[CodeSandbox](https://codesandbox.io/s/caputira-dev-zveyd0)
 
 ### The Development Environment in the cloud
 
-[sandbox template](https://codesandbox.io/s/github/sallespro/papuf)
+[sandbox template](https://codesandbox.io/s/github/sallespro/caputira)
 
 
 ## plugins
