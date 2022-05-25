@@ -1,8 +1,8 @@
 {
-  "name": "staging-caputira",
+  "name": "caputira",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:sallespro/papuf.git",
+  "repository": "git@github.com:sallespro/caputira.git",
   "author": "Rafael Rocco Salles <sallespro@gmail.com>",
   "license": "MIT",
   "scripts": {
