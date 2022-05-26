@@ -7,9 +7,9 @@ const path = require(`path`)
 module.exports = {
   pathPrefix: "/pilot",
   siteMetadata: {
-    title: "papuf",
+    title: "Hemerson Rabello de Souza",
     author: "Rafael Rocco Salles",
-    description: "A Remark(able) Gatsby starter"
+    description: "coleção de fotos e vídeos de viagem - Maio 2022"
   },
   plugins: [
     `gatsby-plugin-sharp`,
