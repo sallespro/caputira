@@ -22,26 +22,38 @@ export const squareImage = graphql`
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: {
-          extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
-          absolutePath: { regex: "/(jpeg)/" }
-        }
-      ) {
-        totalCount
+      allFile (filter: {sourceInstanceName: {eq: "backgrounds"}}){
         edges {
-          node {
-            name
-            ...squareImage
-            # childImageSharp {
-            #   fluid(maxWidth: 915, quality: 70) {
-            #     aspectRatio
-            #     ...GatsbyImageSharpFluid_withWebp
-            #   }
-            # }
-          }
-        }
+            node {
+              relativePath
+              childImageSharp {
+                fluid (maxWidth: 1920, quality: 100){
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
       }
+          }
+      # allFile(
+      #   filter: {
+      #     extension: { regex: "/(jpg)|(png)|(tif)|(tiff)|(webp)|(jpeg)/" }
+      #     absolutePath: { regex: "/(jpeg)/" }
+      #   }
+      # ) {
+      #   totalCount
+      #   edges {
+      #     node {
+      #       name
+      #       ...squareImage
+      #       # childImageSharp {
+      #       #   fluid(maxWidth: 915, quality: 70) {
+      #       #     aspectRatio
+      #       #     ...GatsbyImageSharpFluid_withWebp
+      #       #   }
+      #       # }
+      #     }
+      #   }
+      # }
       file(relativePath: { eq: "about.jpg" }) {
         ...squareImage
         # childImageSharp {

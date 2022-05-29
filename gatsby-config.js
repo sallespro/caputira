@@ -7,7 +7,7 @@ const path = require(`path`)
 module.exports = {
   pathPrefix: "/pilot",
   siteMetadata: {
-    title: "Hemerson Rabello de Souza",
+    title: "Flight Docs",
     author: "Rafael Rocco Salles",
     description: "coleção de fotos e vídeos de viagem - Maio 2022"
   },
@@ -15,10 +15,25 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/bg`, // wherever background images are stored
       },
     },
     {

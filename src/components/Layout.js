@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
       </header>
       {children}
       <footer className="py-2 text-center text-gray-600 text-xs">
-        &copy; 2021 - {description}
+        &copy; 2022 - {description}
       </footer>
     </>
   )

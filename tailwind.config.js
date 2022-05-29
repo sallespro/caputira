@@ -1,6 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['Tangerine', ...defaultTheme.fontFamily.sans],
+        'paci': ['Pacifico', ...defaultTheme.fontFamily.sans],
+      },
       // backgroundImage: theme => ({
       //   'fly': "url('../src/images/moeda-flight-selfie_HD.jpeg')",
       // })
