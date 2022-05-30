@@ -9,15 +9,18 @@ import Video from "../components/video"
 const IndexPage = () => (
 
   <Layout>
-    <div className="hidden sm:flex flex-col 
-          items-end h-auto">
+    <div className="hidden sm:flex flex-col items-end h-auto">
       <div className="bg-black inset-0 z-0  px-4">
       </div>
       <div class="flex m-16 justify-end">
-        <div class="w-1/2  bg-white p-5  rounded">
+      {/* <Video
+          videoSourceURL='https://www.youtube.com/embed/ge6vvCDKDr4'
+          videoTitle={'title video'}
+        /> */}
+        <div class="w-1/2  bg-transparent p-5  rounded">
           <div class="grid items-center">
               <Icon />
-              <h3 class="pt-1 mb-2 text-2xl text-center font-paci">Flight Docs</h3>
+              <h3 class="pt-1 mb-2 text-2xl text-center font-paci text-blue-100">Flight Docs</h3>
               <p class="mb-4 text-sm text-gray-700  text-center">
              Nova série de vídeo documentários sobre vôo livre
               </p>
@@ -42,10 +45,7 @@ const IndexPage = () => (
           </div>
   
       </div>
-            <Video
-          videoSourceURL='https://www.youtube.com/embed/ge6vvCDKDr4'
-          videoTitle={'title video'}
-        />
+
       {/* <div className="py-24 justify-end" >
           <h1 className="text-white  font-semibold text-6xl font-sans">
             Minas Flying Trips

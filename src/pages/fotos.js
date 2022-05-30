@@ -22,7 +22,7 @@ export const squareImage = graphql`
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile (filter: {sourceInstanceName: {eq: "backgrounds"}}){
+      allFile (limit: 8, filter: {sourceInstanceName: {eq: "backgrounds"}}){
         edges {
             node {
               relativePath
@@ -54,7 +54,9 @@ export default () => {
       #     }
       #   }
       # }
-      file(relativePath: { eq: "about.jpg" }) {
+      file( 
+       
+        relativePath: { eq: "about.jpg" }) {
         ...squareImage
         # childImageSharp {
         #   fluid {

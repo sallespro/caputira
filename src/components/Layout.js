@@ -62,9 +62,9 @@ const Layout = ({ children }) => {
         </nav>
       </header>
       {children}
-      <footer className="py-2 text-center text-gray-600 text-xs">
+      {/* <footer className="py-2 text-center text-gray-600 text-xs">
         &copy; 2022 - {description}
-      </footer>
+      </footer> */}
     </>
   )
 }

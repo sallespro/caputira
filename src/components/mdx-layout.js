@@ -100,15 +100,20 @@ const MarkdownLayout = ({ children, data }) => {
               fluid={data.mdx.frontmatter.image.childImageSharp.fluid}
               alt="images"
             /> */}
-            <img className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover"
+            {/* <img className="h-80 w-80 sm:w-[28rem] sm:h-[28rem] flex-shrink-0 object-cover"
               src="https://drive.cloudbot.com.br/fly/moeda-flight-selfie_HD.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=conector%2F20220525%2F%2Fs3%2Faws4_request&X-Amz-Date=20220525T231625Z&X-Amz-Expires=432000&X-Amz-SignedHeaders=host&X-Amz-Signature=4fcae1991ec2df058780d6748788b0c3d0753bbf9ec63c9f64d15c3e34d30d93" alt="" />
+               */}
+                     <Video
+          videoSourceURL={data.mdx.frontmatter.videoSourceURL}
+          videoTitle={data.mdx.frontmatter.videoTitle}
+        />
           </div>
 
           <div className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
             <div className="p-6">
               {/* <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"> {data.mdx.frontmatter.title}</h2> */}
-              <p className="mt-6 text-gray-500 ">
-                O Espírito Santo é uma das áreas de voo mais cênicas que conhecemos. O mais tardar quando você desligar o seu primeiro tubo termal e um labirinto de enormes monólitos de granito, selva atlântica e plantações de café encantadas se abrir à sua frente, você entenderá porque toda a nossa equipe se apaixonou por esta região em uníssono. Além disso, há temperaturas tropicais quentes e nuvens cúmulos fofas e perfeitamente formadas que mostram o caminho.
+              <p className="mt-6 text-gray-700 ">
+                  Inhapim tem uma das áreas de voo que conhecemos.  Dois monólitos de granito e plantações de café à frente.
               </p>
 
             </div>
@@ -117,36 +122,7 @@ const MarkdownLayout = ({ children, data }) => {
       </section>
 
 
-      <div className="max-w-2xl mx-auto py-24 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
-        <div>
-          {/* <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"> {data.mdx.frontmatter.title}</h2> */}
-          <p className="mt-4 text-gray-500">
-            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-            steel divider separates active cards from new ones, or can be used to archive important task lists.
-          </p>
-
-          <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            {features.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-gray-500">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          {pics.map(image => (
-            <div>
-              <Img
-                key={image.node.childImageSharp.fluid.src}
-                fluid={image.node.childImageSharp.fluid}
-                style={{ 'border-radius': '1rem' }}
-              />
-            </div>
-          ))}
-
-        </div>
-      </div>
+     
 
       {/* <Video
           videoSourceURL={data.mdx.frontmatter.videoSourceURL}
