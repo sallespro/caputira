@@ -4,6 +4,16 @@ import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
 
+export const cImage = graphql`
+  fragment cImage on File {
+    childImageSharp {
+      fluid(maxWidth: 320, maxHeight: 180) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+`
+
 export const squareImage = graphql`
   fragment squareImage on File {
     childImageSharp {
@@ -37,7 +47,7 @@ export default () => {
         }
       }
       file(relativePath: { eq: "about.jpg" }) {
-        ...squareImage
+        ...cImage
         # childImageSharp {
         #   fluid {
         #     base64
