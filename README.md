@@ -39,6 +39,18 @@ The [github.io](https://sallespro.github.io/caputira/) site
 - `prettier`
 - `gatsby-plugin-postcss` including `autoprefixer`
 
+## mdx
+
+```
+---
+title: "Caputira"
+slug: "/Caputira"
+image: "../images/moeda-flight-selfie_HD.jpeg"
+videoSourceURL: "https://www.youtube.com/embed/Mj_XXjZy4DQ"
+videoTitle: " Inhapim tem uma das áreas de voo que conhecemos.  Dois monólitos de granito e plantações de café à frente"
+---
+```
+
 ## SEO
 
 - `gatsby-plugin-react-helmet`

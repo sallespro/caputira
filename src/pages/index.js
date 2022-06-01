@@ -12,22 +12,22 @@ const IndexPage = () => (
     <div className="hidden sm:flex flex-col items-end h-auto">
       <div className="bg-black inset-0 z-0  px-4">
       </div>
-      <div class="flex m-16 justify-end">
+      <div className="flex m-16 justify-end">
       {/* <Video
           videoSourceURL='https://www.youtube.com/embed/ge6vvCDKDr4'
           videoTitle={'title video'}
         /> */}
-        <div class="w-1/2  bg-transparent p-5  rounded">
-          <div class="grid items-center">
+        <div className="w-1/2  bg-transparent p-5  rounded">
+          <div className="grid items-center">
               <Icon />
-              <h3 class="pt-1 mb-2 text-2xl text-center font-paci text-blue-100">Flight Docs</h3>
-              <p class="mb-4 text-sm text-gray-700  text-center">
+              <h3 className="pt-1 mb-2 text-2xl text-center font-paci text-blue-100">Flight Docs</h3>
+              <p className="mb-4 text-sm text-gray-700  text-center">
              Nova série de vídeo documentários sobre vôo livre
               </p>
-              <hr class="mb-6 border-t" />
-              <div class="mb-6 text-center">
+              <hr className="mb-6 border-t" />
+              <div className="mb-6 text-center">
                   <button
-                    class="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
+                    className="w-full px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700 focus:outline-none focus:shadow-outline"
                     type="button"
                   >
                     Assistir trailer
@@ -37,8 +37,8 @@ const IndexPage = () => (
               Este episódio é protagonizado por Hemerson R. Souza, instrutor de vôo livre que nos convida a conhecer um Estado brasileiro e conta sua história de vida no vôo, com belos exemplos de pessoas e lugares a se conhecer.
               </p> */}
             </div>
-              <div class="text-center">
-                <a class="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
+              <div className="text-center">
+                <a className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
                   href="./index.html">
                 </a>
               </div>

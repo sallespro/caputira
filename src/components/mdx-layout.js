@@ -111,11 +111,10 @@ const MarkdownLayout = ({ children, data }) => {
 
           <div className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
             <div className="p-6">
-              {/* <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"> {data.mdx.frontmatter.title}</h2> */}
+              <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl"> {data.mdx.frontmatter.title}</h2>
               <p className="mt-6 text-gray-700 ">
-                  Inhapim tem uma das áreas de voo que conhecemos.  Dois monólitos de granito e plantações de café à frente.
+                  {data.mdx.frontmatter.videoTitle}
               </p>
-
             </div>
           </div>
         </div>

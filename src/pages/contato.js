@@ -63,14 +63,14 @@ export default () => {
   const pics = data.allFile.edges
   return (
     <Layout>
-      <div class="container mx-auto">
-      <div class="flex justify-center px-6 my-12">
-          <div class="w-full xl:w-3/4 lg:w-11/12 flex">
-            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg login_img_section"></div>
-            <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none h-64">
-              <div class="px-8 mb-4 text-center">
-                <h3 class="pt-4 mb-2 text-2xl">Hemerson Rabello de Souza</h3>
-                <p class="mb-4 text-sm text-gray-700">
+      <div className="container mx-auto">
+      <div className="flex justify-center px-6 my-12">
+          <div className="w-full xl:w-3/4 lg:w-11/12 flex">
+            <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg login_img_section"></div>
+            <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none h-64">
+              <div className="px-8 mb-4 text-center">
+                <h3 className="pt-4 mb-2 text-2xl">Hemerson Rabello de Souza</h3>
+                <p className="mb-4 text-sm text-gray-700">
                   Vôos Duplos • Coaching • Viagens
                 </p>
               </div>
@@ -115,13 +115,13 @@ export default () => {
             </div>
           </div>
         </div>
-        <div class="flex justify-center px-6 my-12">
-          <div class="w-full xl:w-3/4 lg:w-11/12 flex">
-            <div class="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg contact_img_section"></div>
-            <div class="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none h-64">
-              <div class="px-8 mb-4 text-center">
-                <h3 class="pt-4 mb-2 text-2xl">Rafael Rocco Salles</h3>
-                <p class="mb-4 text-sm text-gray-700">
+        <div className="flex justify-center px-6 my-12">
+          <div className="w-full xl:w-3/4 lg:w-11/12 flex">
+            <div className="w-full h-auto bg-gray-400 hidden lg:block lg:w-1/2 bg-cover rounded-l-lg contact_img_section"></div>
+            <div className="w-full lg:w-1/2 bg-white p-5 rounded-lg lg:rounded-l-none h-64">
+              <div className="px-8 mb-4 text-center">
+                <h3 className="pt-4 mb-2 text-2xl">Rafael Rocco Salles</h3>
+                <p className="mb-4 text-sm text-gray-700">
                   Web • Video • Consultoria
                 </p>
               </div>
@@ -167,7 +167,7 @@ export default () => {
           </div>
         </div>
       </div>
-      <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8 p-8 ">
+      <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8 p-8 ">
       </div>
     </Layout>
   )

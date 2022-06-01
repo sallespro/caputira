@@ -73,13 +73,13 @@ export default () => {
   const pics = data.allFile.edges
   return (
     <Layout>
-      <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8 p-8 ">
+      <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8 p-8 ">
       {pics.map(image => (
-         <div>
+         <div key={image.node.childImageSharp.fluid.src}>
           <Img
             key={image.node.childImageSharp.fluid.src}
             fluid={image.node.childImageSharp.fluid}
-            style={{ 'border-radius' : '1rem' }}
+            style={{ 'borderRadius' : '1rem' }}
           />
         </div>
       ))}
